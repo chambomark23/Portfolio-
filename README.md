@@ -1,41 +1,41 @@
-# Mark Chamberlain's DIGIT 100 Portfolio
+# Mark Chamberlain's DIGIT 100 Website
 
-My personal website for DIGIT 100 at Penn State Behrend.
+A basic website for my class at Penn State Behrend.
 
-## Website files
+## Files
 
-- `docs/index.html`: home page with my interests, images, lists, and a table.
-- `docs/about.html`: about me and the website project.
-- `docs/gallery.html`: image gallery.
-- `docs/style.css`: shared page styling.
-- `docs/images/`: the images copied from the class starter folder.
+- `docs/index.html`: home page with my hobbies, a table, and school pictures.
+- `docs/about.html`: a little about me.
+- `docs/gallery.html`: two school pictures with captions and alt text.
+- `docs/interests.html`: sneakers, cars, NASCAR, and Cleveland sports.
+- `docs/style.css`: simple colors, fonts, and spacing.
+- `docs/images/`: image files.
 
-## Preview the website
+Every page has the same menu with relative links.
 
-Open `docs/index.html` in oXygen to edit it. Save the file, then open it in a web browser. On a Mac, use Command + O in the browser to choose the saved HTML file. Save and refresh the browser after each change.
+## Preview and edit
 
-## New HTML element
+Open an HTML file in oXygen to edit it. Save it, then open `docs/index.html` in a web browser. Refresh the browser after saving changes.
 
-The home page adds a `<table>`, which the original starter home page did not use.
+## Class starter files
 
-Reference: [W3Schools HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+The website began with the [introDH-Hub starter files](https://github.com/newtfire/introDH-Hub/tree/master/docs).
+The library photo and Penn State logo came with those files.
 
-## Starter credit
+The home page uses a table. Reference: [W3Schools HTML Tables](https://www.w3schools.com/html/html_tables.asp).
 
-The website began with the [introDH-Hub docs folder](https://github.com/newtfire/introDH-Hub/tree/master/docs). The images come from those class starter files. The newt artwork in the gallery is credited to Dr. B and newtfire.org.
+## Update my local copy
 
-## Working on the repo from my computer
-
-Run these commands inside the local Portfolio- repository:
+Run this inside the local Portfolio- repository:
 
 ```bash
 git pull --ff-only
 ```
 
-After saving any new edits:
+After making and saving more edits:
 
 ```bash
 git add docs/ README.md
-git commit -m "Update my portfolio website"
+git commit -m "Update my website"
 git push
 ```

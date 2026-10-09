@@ -1,119 +1,72 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-    <head>
-        <title>Mark Chamberlain | Home</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body id="top">
-        <header>
-            <p class="site-label">My DIGIT 100 Portfolio</p>
-            <h1>Mark Chamberlain</h1>
-            <!-- The same relative navigation links appear on every page. -->
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="interests.html">Interests</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Welcome to My Website</h2>
-            <p>My name is Mark Chamberlain, and I study marketing at
-                <a href="https://behrend.psu.edu/">Penn State Behrend</a>.
-                I made this website for DIGIT 100. It is a place to share my interests
-                and add class projects as I finish them.</p>
-            <p>Outside of school, I enjoy sneakers, cars, NASCAR, and Cleveland sports.
-                You can learn more on my <a href="about.html">About page</a>.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Chamberlain - Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Mark Chamberlain</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="interests.html">Interests</a>
+    </nav>
 
-            <!-- Heading levels go from h1 to h2 to h3 to h4 without skipping. -->
-            <h2>My Interests</h2>
-            <ul>
-                <li>Collecting sneakers and following new releases</li>
-                <li>Cars and car shows</li>
-                <li>Watching NASCAR races</li>
-                <li>Cheering for Cleveland teams</li>
-            </ul>
+    <h2>Welcome to My Website</h2>
+    <p>My name is Mark Chamberlain. I study marketing at Penn State Behrend.
+        I made this website for DIGIT 100.</p>
 
-            <h3>Sneakers</h3>
-            <p>I like collecting sneakers and seeing the different colors and designs.
-                I also follow new releases on the <a href="https://www.nike.com/">Nike website</a>.</p>
+    <h2>My Interests</h2>
+    <ul>
+        <li>Sneakers</li>
+        <li>Cars</li>
+        <li>NASCAR</li>
+        <li>Cleveland sports</li>
+    </ul>
 
-            <h3>Cars and Racing</h3>
-            <p>Cars are another one of my interests. I enjoy going to car shows
-                and seeing what other people have done with their cars.</p>
-            <h4>NASCAR</h4>
-            <p>I enjoy watching races and collecting diecast cars. I can keep up with
-                racing news on the <a href="https://www.nascar.com/">NASCAR website</a>.</p>
+    <h3>Cars</h3>
+    <p>I like Camaros and going to car shows.</p>
 
-            <h3>Cleveland Sports</h3>
-            <p>I follow the <a href="https://www.clevelandbrowns.com/">Cleveland Browns</a>
-                and the <a href="https://www.nba.com/cavaliers/">Cleveland Cavaliers</a>.
-                Going to games is one of my favorite ways to spend time with family.</p>
+    <h4>NASCAR</h4>
+    <p>I also enjoy watching NASCAR and collecting diecast cars.</p>
 
-            <h2>A Quick Look at My Hobbies</h2>
-            <!-- New element: table. The starter homepage did not use a table.
-                 Reference: https://www.w3schools.com/html/html_tables.asp -->
-            <table>
-                <caption>A few things I enjoy</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Interest</th>
-                        <th scope="col">What I Enjoy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Sneakers</th>
-                        <td>Collecting shoes and following new releases</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Cars</th>
-                        <td>Going to car shows</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">NASCAR</th>
-                        <td>Watching races and collecting diecast cars</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Sports</th>
-                        <td>Following the Browns and Cavaliers</td>
-                    </tr>
-                </tbody>
-            </table>
+    <h2>My Hobbies</h2>
+    <table>
+        <tr>
+            <th>Hobby</th>
+            <th>What I Like</th>
+        </tr>
+        <tr>
+            <td>Sneakers</td>
+            <td>Collecting shoes</td>
+        </tr>
+        <tr>
+            <td>Cars</td>
+            <td>Going to car shows</td>
+        </tr>
+        <tr>
+            <td>Sports</td>
+            <td>Watching the Browns and Cavaliers</td>
+        </tr>
+    </table>
 
-            <h2>My Goals for This Website</h2>
-            <ol>
-                <li>Learn how to organize a webpage.</li>
-                <li>Add projects from my classes.</li>
-                <li>Keep improving the site as I learn more.</li>
-            </ol>
+    <h2>School Pictures</h2>
+    <figure>
+        <img src="images/bd-lilley-library-interior.jpg" alt="Study tables and a large window inside the Lilley Library at Penn State Behrend." />
+        <figcaption>The Lilley Library at Penn State Behrend. Photo from our class starter files.</figcaption>
+    </figure>
 
-            <h2>Campus Images</h2>
-            <p>These images came with our class starter files. You can see more
-                on my <a href="gallery.html">Gallery page</a>.</p>
-            <div class="image-pair">
-                <figure>
-                    <img src="images/bd-lilley-library-interior.jpg"
-                        alt="The inside of Behrend's Lilley Library, with study tables and a large arched window." />
-                    <figcaption>The Lilley Library at Penn State Behrend.
-                        Photo from the <a href="https://github.com/newtfire/introDH-Hub">class starter files</a>.</figcaption>
-                </figure>
-                <figure>
-                    <img class="logo" src="images/psu-logo.svg" alt="Penn State university logo." />
-                    <figcaption>The Penn State logo connects this website to my school.
-                        Image from the class starter files.</figcaption>
-                </figure>
-            </div>
-        </main>
-        <footer>
-            <p>Mark Chamberlain | DIGIT 100</p>
-            <p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a> |
-                <a href="https://www.w3schools.com/html/html_tables.asp">HTML table guide</a> |
-                <a href="#top">Back to top</a></p>
-        </footer>
-    </body>
+    <figure>
+        <img src="images/psu-logo.svg" alt="Penn State university logo." />
+        <figcaption>The Penn State logo. Image from our class starter files.</figcaption>
+    </figure>
+
+    <h2>My School</h2>
+    <p><a href="https://behrend.psu.edu/">Penn State Behrend</a></p>
+
+    <p>Mark Chamberlain | DIGIT 100</p>
+</body>
 </html>
