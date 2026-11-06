@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presidential Speech Comparison - Mark Chamberlain</title>
+<link rel="stylesheet" href="style.css">
+<style>figure img{width:100%;max-width:1000px;height:auto}table{border-collapse:collapse}td,th{border:1px solid #777;padding:8px}figcaption{margin:8px 0 20px}</style></head>
+<body>
+<h1>Comparing Presidential Speeches</h1>
+<nav><a href="index.html">Home</a> | <a href="resume.html">Resume</a> | <a href="gallery.html">Gallery</a> | <a href="reflection.html">Reflection</a> | <a href="text-analysis.html">Text Analysis</a></nav>
+<p>Mark Chamberlain | DIGIT 100 | Work in progress</p>
+<h2>What I Am Comparing</h2>
+<p>This project compares the first inaugural speeches of three early presidents with those of three modern presidents. An inaugural speech is the speech a president gives when starting a term. I want to see which words and repeated phrases are common in each group and how the language is different.</p>
+<ul><li>Early group: George Washington (1789), John Adams (1797), and Thomas Jefferson (1801).</li><li>Modern group: George W. Bush (2001), Barack Obama (2009), and Donald Trump (2017).</li></ul>
+<p>The texts come from <a href="https://github.com/newtfire/introDH-Hub/tree/master/textFiles/inaugural">our class text collection</a>. They are organized into early and modern folders in <a href="https://github.com/chambomark23/Portfolio-/tree/main/text-lab/presidents">my text lab on GitHub</a>, outside the docs folder.</p>
+<h2>Early Speeches in Voyant</h2>
+<figure><img src="images/early-voyant.jpg" alt="Voyant analysis of Washington, Adams, and Jefferson, with government prominent in the word cloud."><figcaption>Figure 1. Early speeches in Voyant, using its automatic stop-word list. The group contains 5,482 words.</figcaption></figure>
+<p>Government is the most frequent word after Voyant removes common words. It appears 36 times. People appears 26 times, and country and citizens each appear 17 times. This suggests that the form of government and its relationship to citizens are useful topics to explore. A word count alone does not explain what a president means, so the surrounding sentences matter too.</p>
+<h2>Modern Speeches in Voyant</h2>
+<figure><img src="images/modern-voyant.jpg" alt="Voyant analysis of Bush, Obama, and Trump, with America prominent in the word cloud."><figcaption>Figure 2. Modern speeches in Voyant with the same automatic stop-word setting. Voyant counts 5,443 words in this group.</figcaption></figure>
+<p>America appears 35 times, nation appears 26 times, and new appears 22 times. Country appears 20 times and people appears 18 times. Compared with the early word cloud, these words suggest a possible focus on national identity and change. Both groups still talk about people and the country.</p>
+<p>The groups are close in total length, which makes their raw counts easier to compare. However, there are only three speeches in each group. These results do not represent every president or prove that all older and newer speeches are different.</p>
+<h2>Repeated Words and Phrases</h2>
+<p>An n-gram is a group of words that appear together. A three-word phrase is a 3-gram. This preliminary table counts selected 3-grams in the saved text files. The counts were calculated separately from Voyant: letters are lowercased, punctuation separates words, apostrophes inside words are kept, and phrases never cross from one speech into another. Common words are kept for this comparison.</p>
+<table><tr><th>Three-word phrase</th><th>Early group</th><th>Modern group</th></tr><tr><td>of the people</td><td>8</td><td>0</td></tr>
+<tr><td>my fellow citizens</td><td>4</td><td>2</td></tr>
+<tr><td>and we will</td><td>0</td><td>8</td></tr>
+<tr><td>we will not</td><td>0</td><td>6</td></tr>
+<tr><td>men and women</td><td>0</td><td>6</td></tr>
+<tr><td>together we will</td><td>0</td><td>5</td></tr></table>
+<p>The early group uses of the people more often. The modern group uses and we will and we will not more often. These future-looking phrases may help presidents describe promises and plans. I will examine their surrounding sentences before drawing a stronger conclusion.</p>
+<figure><img src="images/modern-phrases.jpg" alt="Voyant Phrases view showing repeated phrases in the modern presidential speeches."><figcaption>Figure 3. An initial exploration of Voyant's Phrases view. This view displays phrases of different lengths and handles overlapping phrases differently from the fixed 3-gram table above.</figcaption></figure>
+<p>The Phrases view includes we will bring back our four times and america at its best is three times. Repetition can make a message stand out. Next I want to check which speech contributes each phrase, rather than assume a phrase is shared by all three modern presidents.</p>
+<h2>Next Steps</h2>
+<p>I will compare 2-, 3-, and 4-grams in AntConc, look up the same phrase in both groups using KWIC (Keyword in Context), and add screenshots of those results. The AntConc part is not completed in this draft. I also want to try changing Voyant's stop words and see whether that changes what stands out.</p>
+<p><a href="https://voyant-tools.org/?corpus=f42d2ea83e85ed73b76075823ab5778c">Open early speeches in Voyant</a> | <a href="https://voyant-tools.org/?corpus=f1ef984bd8da815fef053efdd43ae02b">Open modern speeches in Voyant</a></p>
+<p><a href="https://github.com/chambomark23/Portfolio-/tree/main/docs">View my website code</a></p>
+</body></html>
