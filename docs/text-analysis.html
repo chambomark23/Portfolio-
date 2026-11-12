@@ -3,21 +3,57 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Presidential Speech Comparison - Mark Chamberlain</title>
 <link rel="stylesheet" href="style.css">
-<style>figure{width:auto;max-width:1000px;margin:20px 0}figure img{clip-path:inset(4% 0 0);width:100%;max-width:1000px;height:auto}table{border-collapse:collapse}td,th{border:1px solid #777;padding:8px}figcaption{margin:8px 0 20px}</style></head>
+<style>
+    .speech-comparison {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .speech-comparison section {
+        flex: 1 1 25rem;
+        min-width: 0;
+    }
+    .analysis-image {
+        width: 100%;
+        max-width: 60rem;
+        margin: 1rem 0;
+    }
+    .analysis-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        clip-path: inset(4% 0 0);
+    }
+    .analysis-image figcaption {
+        margin-top: 0.5rem;
+    }
+</style></head>
 <body>
 <h1>Comparing Presidential Speeches</h1>
 <nav><a href="index.html">Home</a> | <a href="resume.html">Resume</a> | <a href="gallery.html">Gallery</a> | <a href="reflection.html">Reflection</a> | <a href="text-analysis.html">Text Analysis</a></nav>
-<p>Mark Chamberlain | DIGIT 100 | Work in progress</p>
+<p>Mark Chamberlain | DIGIT 100 | Workshop Rough Draft</p>
 <h2>What I Am Comparing</h2>
 <p>I am comparing the first speeches given by three early presidents and three modern presidents when they took office. I want to see which words and phrases they repeated and how their speeches are different.</p>
 <ul><li>Early group: George Washington (1789), John Adams (1797), and Thomas Jefferson (1801).</li><li>Modern group: George W. Bush (2001), Barack Obama (2009), and Donald Trump (2017).</li></ul>
 <p>The texts come from <a href="https://github.com/newtfire/introDH-Hub/tree/master/textFiles/inaugural">our class text collection</a>. I saved them in early and modern folders in <a href="https://github.com/chambomark23/Portfolio-/tree/main/text-lab/presidents">my text lab on GitHub</a>, outside the docs folder.</p>
-<h2>Early Speeches in Voyant</h2>
-<figure><img src="images/early-voyant-clean.jpg" alt="Voyant analysis of Washington, Adams, and Jefferson, with government prominent in the word cloud."><figcaption>Figure 1. The early speeches have 5,482 words. Voyant leaves out common words like “the” and “and”.</figcaption></figure>
+<h2>Comparing the Voyant Word Clouds</h2>
+<p>Click either screenshot to see it at full size.</p>
+<div class="speech-comparison">
+<section>
+<h3>Early Speeches</h3>
+<figure class="analysis-image">
+    <a href="images/early-voyant-clean.jpg"><img src="images/early-voyant-clean.jpg" alt="Voyant analysis of Washington, Adams, and Jefferson, with government prominent in the word cloud."></a>
+    <figcaption>Figure 1. The early speeches have 5,482 words. Voyant leaves out common words like “the” and “and”.</figcaption></figure>
 <p>Government stands out the most in the early speeches. It appears 36 times. People appears 26 times, while country and citizens each appear 17 times. These words suggest that the presidents talked a lot about government and the people it serves. I still need to look at the full sentences to understand more.</p>
-<h2>Modern Speeches in Voyant</h2>
-<figure><img src="images/modern-voyant-clean.jpg" alt="Voyant analysis of Bush, Obama, and Trump, with America prominent in the word cloud."><figcaption>Figure 2. The modern speeches have 5,443 words. The same common words are left out of this word cloud.</figcaption></figure>
+</section>
+<section>
+<h3>Modern Speeches</h3>
+<figure class="analysis-image">
+    <a href="images/modern-voyant-clean.jpg"><img src="images/modern-voyant-clean.jpg" alt="Voyant analysis of Bush, Obama, and Trump, with America prominent in the word cloud."></a>
+    <figcaption>Figure 2. The modern speeches have 5,443 words. The same common words are left out of this word cloud.</figcaption></figure>
 <p>America stands out in the modern speeches. It appears 35 times, nation appears 26 times, and new appears 22 times. Country appears 20 times and people appears 18 times. These words make me think about America and its future. Both groups talk about the country and its people.</p>
+</section>
+</div>
 <p>The two groups have almost the same number of words, which helps with the comparison. This is only a small sample, so I cannot say the results apply to every president.</p>
 <h2>Repeated Words and Phrases</h2>
 <p>An n-gram is a group of words used together. A 3-gram has three words. This table shows how often some three-word phrases appear in each group. These counts were calculated from the text files separately from Voyant. Capital letters are treated the same as lowercase letters, and common words are included.</p>
@@ -27,9 +63,12 @@
 <tr><td>we will not</td><td>0</td><td>6</td></tr>
 <tr><td>men and women</td><td>0</td><td>6</td></tr>
 <tr><td>together we will</td><td>0</td><td>5</td></tr></table>
-<p>The early speeches use of the people more often. The modern speeches use and we will and we will not more often. These phrases seem to introduce plans or promises. My next step is to read the sentences around them.</p>
-<figure><img src="images/modern-phrases-clean.jpg" alt="Voyant Phrases view showing repeated phrases in the modern presidential speeches."><figcaption>Figure 3. Voyant shows repeated phrases of different lengths. Its counting rules are different from those used in the table above.</figcaption></figure>
-<p>Voyant shows we will bring back our four times and america at its best is three times. Repeating a phrase can help a president make a point. I want to check which president used each phrase.</p>
+<p>I checked which presidents used two of the phrases. John Adams used “of the people” seven times, and George Washington used it once. “And we will” was spread across all three modern speeches. George W. Bush and Donald Trump each used it twice, and Barack Obama used it four times.</p>
+<p>This showed me that a phrase can look common because one person repeats it. Adams accounted for most of the early group's uses of “of the people,” while all three modern presidents used “and we will.”</p>
+<figure class="analysis-image">
+    <a href="images/modern-phrases-clean.jpg"><img src="images/modern-phrases-clean.jpg" alt="Voyant Phrases view showing repeated phrases in the modern presidential speeches."></a>
+    <figcaption>Figure 3. Voyant shows repeated phrases of different lengths. Its counting rules are different from those used in the table above.</figcaption></figure>
+<p>Trump used “we will bring back our” four times. Bush used “America at its best is” three times. Both repeated a phrase to make a point, but each had his own wording.</p>
 <h2>Next Steps</h2>
 <p>Next, I plan to use AntConc to compare phrases with two, three, and four words. I will also read the words around each phrase to understand how it is used. I have not finished the AntConc part yet. In Voyant, I want to change the list of common words it leaves out and see what changes.</p>
 <p><a href="https://voyant-tools.org/?corpus=f42d2ea83e85ed73b76075823ab5778c">Open early speeches in Voyant</a> | <a href="https://voyant-tools.org/?corpus=f1ef984bd8da815fef053efdd43ae02b">Open modern speeches in Voyant</a></p>
