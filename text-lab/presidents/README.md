@@ -10,4 +10,4 @@ The six source texts were copied without edits. Texts stay outside docs; analysi
 Voyant uses its automatic stop-word list. It counts 5482 words early and 5443 modern.
 The initial 3-gram comparison lowercases text and uses [a-z]+(?:'[a-z]+)? tokens, keeps stop words, and counts overlapping windows separately inside each speech. Its modern count is 5439 because tokenization differs from Voyant.
 
-AntConc exploration is still to be completed. Do not label Voyant screenshots as AntConc results.
+Final analysis uses AntConc 3.5.9 (Linux), with each corpus loaded separately, case sensitivity off, common words retained, minimum frequency 1 and minimum range 1. N-gram experiments cover 2, 3, and a range of 4–5 words. Concordance checks include "of the people" in both groups and "we will" in the modern group. The modern Concordance Plot shows 13 matches in Bush, 12 in Obama and 26 in Trump. Actual AntConc screenshots are in docs/images. AntConc splits some punctuation differently from Voyant and the separate regex count.
